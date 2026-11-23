@@ -12,6 +12,16 @@
 body{margin:0;background:#EEF1EC}
 a{color:#17302D}a:hover{color:#8A5410}
 input,select,textarea,button{font-family:inherit}
+@media (max-width:640px){
+.orari{min-width:0 !important}
+.orari thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.orari,.orari tbody{display:block}
+.orari tr{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;padding:20px 0}
+.orari td{display:block;padding:0 !important}
+.orari td:nth-child(2){font-weight:600}
+.orari td:nth-child(3){grid-column:1/-1;font-family:'Marcellus',serif;font-size:22px;line-height:1.25}
+.orari td:nth-child(4){grid-column:1/-1;font-size:15px}
+}
 </style>
 <style>html{scroll-behavior:smooth}</style>
 </head>
@@ -168,7 +178,7 @@ input,select,textarea,button{font-family:inherit}
 <p style="margin: 0; color: #4A5D59">Le lezioni sono su prenotazione e i posti sono limitati. Gli orari possono cambiare con le stagioni.</p>
 </div>
 <div style="flex: 2 1 560px; min-width: 0; overflow-x: auto">
-<table style="width: 100%; min-width: 520px; border-collapse: collapse; font-size: 16px">
+<table class="orari" style="width: 100%; min-width: 520px; border-collapse: collapse; font-size: 16px">
 <thead>
 <tr style="text-align: left; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5D59">
 <th scope="col" style="padding: 0 0 14px; font-weight: 600">Giorno</th>
@@ -285,7 +295,7 @@ input,select,textarea,button{font-family:inherit}
 <a href="#cookie" style="color: #EEF1EC">Cookie</a>
 </nav>
 <span>© [ANNO] Mariagrazia [COGNOME] · [P.IVA]</span>
-<p style="flex: 1 1 100%; margin: 0; padding-top: 24px; border-top: 1px solid #2E4F4A; font-size: 13px; color: #C3CEC8; text-align: center">Sito realizzato dalle mani di Salvatore Giambelluca</p>
+<p style="flex: 1 1 100%; margin: 0; padding-top: 24px; border-top: 1px solid #2E4F4A; font-size: 13px; color: #C3CEC8; text-align: center">Sito realizzato da <a href="https://filobottega.it" style="display: inline-flex; align-items: center; min-height: 44px; color: #EEF1EC">Filo · bottega creativa</a></p>
 </div>
 </footer>
 
