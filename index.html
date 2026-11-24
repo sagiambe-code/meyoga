@@ -22,6 +22,13 @@ input,select,textarea,button{font-family:inherit}
 .orari td:nth-child(3){grid-column:1/-1;font-family:'Marcellus',serif;font-size:22px;line-height:1.25}
 .orari td:nth-child(4){grid-column:1/-1;font-size:15px}
 }
+.totop{animation:totopIn .25s ease-out}
+.totop[hidden]{display:none !important}
+.totop:hover,.totop:focus-visible{color:#D9A04A !important}
+.totop:focus-visible{outline:2px solid #D9A04A;outline-offset:3px}
+@media (min-width:768px){.totop{right:32px !important;bottom:32px !important}}
+@keyframes totopIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.totop{animation:none}html{scroll-behavior:auto !important}}
 </style>
 <style>html{scroll-behavior:smooth}</style>
 </head>
@@ -289,7 +296,7 @@ input,select,textarea,button{font-family:inherit}
 
 <!-- FOOTER -->
 <footer style="background: #17302D; color: #C3CEC8">
-<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; font-size: 14px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; font-size: 14px">
 <span style="font-family: 'Marcellus', serif; font-size: 28px; color: #EEF1EC">Mey</span>
 <nav aria-label="Link secondari" style="display: flex; flex-wrap: wrap; gap: 24px">
 <a href="https://www.instagram.com/shakti__mey/" style="color: #EEF1EC">Instagram</a>
@@ -300,6 +307,22 @@ input,select,textarea,button{font-family:inherit}
 <p style="flex: 1 1 100%; margin: 0; padding-top: 24px; border-top: 1px solid #2E4F4A; font-size: 13px; color: #C3CEC8; text-align: center">Fatto a mano da <a href="https://filobottega.it" style="display: inline-flex; align-items: center; min-height: 44px; color: #EEF1EC">Filo – bottega creativa</a></p>
 </div>
 </footer>
+
+<button type="button" class="totop" aria-label="Torna su" style="position: fixed; right: 16px; bottom: 16px; z-index: 50; width: 48px; height: 48px; padding: 0; border: 1px solid rgba(238, 241, 236, 0.45); border-radius: 999px; background: #17302D; color: #EEF1EC; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 14px rgba(23, 48, 45, 0.25)" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"></path><path d="M6 11l6-6 6 6"></path></svg></button>
+<script>
+(function () {
+  var b = document.querySelector('.totop');
+  function on() { b.hidden = window.scrollY < 600; }
+  window.addEventListener('scroll', on, { passive: true });
+  on();
+  b.addEventListener('click', function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    var logo = document.querySelector('header a');
+    if (logo) logo.focus({ preventScroll: true });
+  });
+})();
+</script>
 
 </div>
 </body>
