@@ -29,6 +29,19 @@ input,select,textarea,button{font-family:inherit}
 @media (min-width:768px){.totop{right:32px !important;bottom:32px !important}}
 @keyframes totopIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.totop{animation:none}html{scroll-behavior:auto !important}}
+.hdr-burger{display:none}
+.hdr-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px}
+.hdr-burger[aria-expanded="true"] .ic-open,.hdr-burger[aria-expanded="false"] .ic-close{display:none}
+@media (max-width:1099px){
+.hdr-in{gap:12px !important;padding:12px 16px !important}
+.hdr-tag,.hdr-cta-long{display:none !important}
+.hdr-cta{padding:0 18px !important}
+.hdr-burger{display:inline-flex}
+.hdr-nav{display:none !important;order:3;flex-basis:100%;margin:0 !important;flex-direction:column;align-items:stretch !important;gap:0 !important;border-top:1px solid #CFD8D1;padding:4px 0 8px}
+.hdr-nav.open{display:flex !important}
+.hdr-nav a{min-height:48px;display:flex;align-items:center;justify-content:flex-start;font-size:17px;border-bottom:1px solid #E1E7E2}
+.hdr-nav a:last-child{border-bottom:0}
+}
 </style>
 <style>html{scroll-behavior:smooth}</style>
 </head>
@@ -37,18 +50,21 @@ input,select,textarea,button{font-family:inherit}
 
 <!-- HEADER -->
 <header style="border-bottom: 1px solid #CFD8D1">
-<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<div class="hdr-in" style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 28px">
 <a href="#top" style="text-decoration: none; display: flex; align-items: baseline; gap: 12px">
 <span style="font-family: 'Marcellus', serif; font-size: 32px; letter-spacing: 0.02em; color: #17302D">Mey</span>
-<span style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #4A5D59">Yoga · Ayurveda · Jyotish</span>
+<span class="hdr-tag" style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #4A5D59">Yoga · Ayurveda · Jyotish</span>
 </a>
-<nav aria-label="Navigazione principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<nav id="menu" class="hdr-nav" aria-label="Navigazione principale" style="margin-left: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
 <a href="#chi-sono" style="text-decoration: none">Chi sono</a>
 <a href="#lezioni" style="text-decoration: none">Lezioni</a>
 <a href="#orari" style="text-decoration: none">Orari</a>
 <a href="#newsletter" style="text-decoration: none">Newsletter</a>
-<a href="#contatti" style="text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; background: #17302D; color: #EEF1EC">Prenota una lezione</a>
 </nav>
+<div style="display: flex; align-items: center; gap: 8px">
+<a href="#contatti" class="hdr-cta" style="text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; background: #17302D; color: #EEF1EC; font-size: 15px; font-weight: 500">Prenota<span class="hdr-cta-long">&nbsp;una lezione</span></a>
+<button type="button" class="hdr-burger" aria-controls="menu" aria-expanded="false" aria-label="Apri il menu" style="width: 44px; height: 44px; padding: 0; align-items: center; justify-content: center; border: 1px solid #17302D; border-radius: 999px; background: transparent; color: #17302D; cursor: pointer"><svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg><svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg></button>
+</div>
 </div>
 </header>
 
@@ -325,5 +341,18 @@ input,select,textarea,button{font-family:inherit}
 </script>
 
 </div>
+<script>
+(function () {
+  var btn = document.querySelector('.hdr-burger'), nav = document.getElementById('menu');
+  function set(open) {
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
+  }
+  btn.addEventListener('click', function () { set(btn.getAttribute('aria-expanded') !== 'true'); });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('open')) { set(false); btn.focus(); } });
+})();
+</script>
 </body>
 </html>
