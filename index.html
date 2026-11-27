@@ -31,6 +31,7 @@ input,select,textarea,button{font-family:inherit}
 @media (prefers-reduced-motion:reduce){.totop{animation:none}html{scroll-behavior:auto !important}}
 footer nav a,#contatti dd a,#newsletter p a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
 .gal{}
+@media (max-width:639px){#lezioni article>div:first-child{height:170px !important}}
 @media (max-width:639px){.gal{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important}.gal>div{height:auto !important;aspect-ratio:1/1}}
 .hdr-burger{display:none}
 .hdr-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px}
@@ -59,11 +60,10 @@ footer nav a,#contatti dd a,#newsletter p a{display:inline-flex;align-items:cent
 <span class="hdr-tag" style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #4A5D59">Yoga · Ayurveda · Arrampicata</span>
 </a>
 <nav id="menu" class="hdr-nav" aria-label="Navigazione principale" style="margin-left: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<a href="#yoga" style="text-decoration: none">Yoga</a>
+<a href="#climb" style="text-decoration: none">Climb</a>
 <a href="#chi-sono" style="text-decoration: none">Chi sono</a>
-<a href="#lezioni" style="text-decoration: none">Lezioni</a>
-<a href="#arrampicata" style="text-decoration: none">Arrampicata</a>
-<a href="#ritiri" style="text-decoration: none">Ritiri</a>
-<a href="#orari" style="text-decoration: none">Orari</a>
+<a href="#contatti" style="text-decoration: none">Contatti</a>
 </nav>
 <div style="display: flex; align-items: center; gap: 8px">
 <a href="#contatti" class="hdr-cta" style="text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; background: #17302D; color: #EEF1EC; font-size: 15px; font-weight: 500">Prenota<span class="hdr-cta-long">&nbsp;una lezione</span></a>
@@ -73,19 +73,22 @@ footer nav a,#contatti dd a,#newsletter p a{display:inline-flex;align-items:cent
 </header>
 
 <!-- HERO -->
-<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
-<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A5410">Yoga con Mey</p>
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px 48px">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A5410">Mey · Yoga teacher &amp; climber</p>
 <h1 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(44px, 6vw, 80px); line-height: 1.04; letter-spacing: -0.01em; text-wrap: balance">Abitare il proprio corpo.</h1>
-<p style="margin: 0; max-width: 520px; font-size: 20px; color: #4A5D59">Uno spazio sereno per rallentare, ascoltarsi e portare a casa qualcosa di concreto, lezione dopo lezione.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 8px">
-<a href="#contatti" style="text-decoration: none; display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #D9A04A; color: #17302D; font-weight: 600">Prenota una lezione</a>
-<a href="#lezioni" style="text-decoration: none; display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; border: 1px solid #17302D; font-weight: 600">Scopri le lezioni</a>
+<p style="margin: 0; font-size: 20px; color: #4A5D59">Sul tappetino e in parete, due modi di ascoltarsi e di scoprire che un limite può diventare forza.</p>
+<a href="https://share.google/Gc3roNONUlj2T2XfU" aria-label="Valutazione 5,0 su 5 su Google, 29 recensioni" style="align-self: flex-start; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; min-height: 44px; text-decoration: none; color: #17302D; font-size: 15px"><span aria-hidden="true" style="color: #8A5410; font-size: 15px; letter-spacing: 1px">★★★★★</span><span><strong style="font-weight: 600">5,0</strong> su Google · <span style="text-decoration: underline; text-underline-offset: 3px">29 recensioni</span></span></a>
 </div>
-<a href="https://share.google/Gc3roNONUlj2T2XfU" aria-label="Valutazione 5,0 su 5 su Google, 29 recensioni" style="align-self: flex-start; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; min-height: 44px; margin-top: -8px; text-decoration: none; color: #17302D; font-size: 15px"><span aria-hidden="true" style="color: #8A5410; font-size: 15px; letter-spacing: 1px">★★★★★</span><span><strong style="font-weight: 600">5,0</strong> su Google · <span style="text-decoration: underline; text-underline-offset: 3px">29 recensioni</span></span></a>
-</div>
-<div style="flex: 1 1 420px; min-width: 0; height: 600px; border-radius: 280px 280px 24px 24px; background: #D5DED6; overflow: hidden">
+<div style="flex: 2 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+<a href="#yoga" style="position: relative; display: block; height: clamp(260px, 40vw, 500px); border-radius: 24px; overflow: hidden; text-decoration: none; background: #D5DED6">
 <img src="img/mey-hero-scoglio.jpg" alt="Mey in allungamento laterale su uno scoglio, con il mare alle spalle" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%">
+<span style="position: absolute; left: 16px; right: 16px; bottom: 16px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 20px 24px; border-radius: 16px; background: rgba(23, 48, 45, 0.88); color: #EEF1EC"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Marcellus', serif; font-size: 40px; line-height: 1">Yoga</span><span style="font-size: 15px; color: #C3CEC8">Lezioni, ritiri e i ritmi dell'Ayurveda</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
+</a>
+<a href="#climb" style="position: relative; display: block; height: clamp(260px, 40vw, 500px); border-radius: 24px; overflow: hidden; text-decoration: none; background: #CFC4B5">
+<img src="img/mey-parete.jpg" alt="Mey arrampica su un masso di roccia chiara, appesa con un braccio e una gamba tesa" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 55% 25%">
+<span style="position: absolute; left: 16px; right: 16px; bottom: 16px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 20px 24px; border-radius: 16px; background: rgba(46, 42, 36, 0.9); color: #F1EBE2"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Marcellus', serif; font-size: 40px; line-height: 1">Climb</span><span style="font-size: 15px; color: #D6CCBF">L'arrampicata, un limite diventato forza</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
+</a>
 </div>
 </section>
 
@@ -105,56 +108,17 @@ footer nav a,#contatti dd a,#newsletter p a{display:inline-flex;align-items:cent
 <p style="margin: 0; color: #4A5D59">Era un periodo in cui la vita aveva ripreso a correre più forte di me, e lavoravo con i bambini all'asilo. Il tappetino è diventato il luogo in cui ascoltarmi, e quella pratica, condivisa con gli altri, si è rivelata così potente da spingermi a lasciare la scuola per dedicarmi interamente allo yoga.</p>
 <p style="margin: 0; color: #4A5D59">Poi è arrivato l'incontro con la mia maestra, Ameriga, che mi ha cambiato la vita e mi ha portata sulla roccia: in parete, come sul tappetino, ho capito che i limiti sono spesso solo proiezioni della mente.</p>
 <p style="margin: 0; color: #4A5D59">Oggi, accanto alla pratica, studio l'Ayurveda e il Jyotish, l'astrologia vedica, per accordare lo yoga ai ritmi di ciascuno.</p>
-<h3 style="margin: 16px 0 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #4A5D59">Il percorso</h3>
-<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid #CFD8D1">
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 0; border-bottom: 1px solid #CFD8D1">
-<span style="flex: 0 0 120px; font-weight: 600; color: #8A5410">[ANNO]</span>
-<span style="flex: 1 1 300px">Insegnante RYT 250, metodo Hatha — certificata Yoga Alliance e CSEN</span>
-</li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 0; border-bottom: 1px solid #CFD8D1">
-<span style="flex: 0 0 120px; font-weight: 600; color: #8A5410">In corso</span>
-<span style="flex: 1 1 300px">Advanced Teacher Training 300 ore con Ameriga Giannone</span>
-</li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 0; border-bottom: 1px solid #CFD8D1">
-<span style="flex: 0 0 120px; font-weight: 600; color: #8A5410">In corso</span>
-<span style="flex: 1 1 300px">Specializzazione in Ayur-yoga</span>
-</li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 0; border-bottom: 1px solid #CFD8D1">
-<span style="flex: 0 0 120px; font-weight: 600; color: #8A5410">[ANNO]</span>
-<span style="flex: 1 1 300px">Cofondatrice di Dolmen Climb, palestra di arrampicata a Trapani</span>
-</li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 0; border-bottom: 1px solid #CFD8D1">
-<span style="flex: 0 0 120px; font-weight: 600; color: #8A5410">Sempre</span>
-<span style="flex: 1 1 300px">Studio dell'Ayurveda e del Jyotish (astrologia vedica)</span>
-</li>
-</ol>
+<p style="margin: 8px 0 0; padding-top: 20px; border-top: 1px solid #CFD8D1; font-size: 15px; color: #4A5D59">Insegnante RYT 250 di Hatha yoga, certificata Yoga Alliance e CSEN · in formazione Advanced 300 ore con Ameriga Giannone · specializzazione in Ayur-yoga · cofondatrice di Dolmen Climb</p>
 </div>
 </div>
 </section>
 
-<!-- APPROCCIO -->
-<section id="approccio" style="max-width: 1200px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: flex; flex-direction: column; gap: 20px; max-width: 720px">
-<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A5410">L'approccio</p>
-<h2 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.2; text-wrap: balance">«Prendersi cura di sé, portando ascolto e presenza, è l'atto d'amore più grande che si possa fare.»</h2>
-<p style="margin: 0; font-size: 15px; color: #4A5D59">— Mey</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 14px; border-top: 2px solid #D9A04A; padding-top: 24px">
-<span style="font-family: 'Marcellus', serif; font-size: 22px; color: #8A5410">01</span>
-<h3 style="margin: 0; font-size: 22px; font-weight: 600">Body Mind Flow</h3>
-<p style="margin: 0; color: #4A5D59">Sequenze fluide che portano a uno stato di presenza e connessione, in cui corpo e mente si muovono insieme.</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 14px; border-top: 2px solid #D9A04A; padding-top: 24px">
-<span style="font-family: 'Marcellus', serif; font-size: 22px; color: #8A5410">02</span>
-<h3 style="margin: 0; font-size: 22px; font-weight: 600">Un limite può diventare forza</h3>
-<p style="margin: 0; color: #4A5D59">Sul tappetino come in parete, si lavora con i propri limiti invece di combatterli: spesso sono solo un punto da cui ripartire.</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 14px; border-top: 2px solid #D9A04A; padding-top: 24px">
-<span style="font-family: 'Marcellus', serif; font-size: 22px; color: #8A5410">03</span>
-<h3 style="margin: 0; font-size: 22px; font-weight: 600">I ritmi naturali</h3>
-<p style="margin: 0; color: #4A5D59">Ayurveda e Jyotish aiutano a rispettare il momento di ciascuno: la stagione, l'energia, la giornata.</p>
-</div>
+<!-- YOGA -->
+<section id="yoga" style="background: #DCE4DD; border-top: 1px solid #CFD8D1">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+<h2 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(72px, 12vw, 160px); line-height: 0.9; letter-spacing: -0.02em">Yoga</h2>
+<p style="margin: 0; max-width: 420px; font-size: 19px; color: #3E524E">Pratica, ascolto e i ritmi dell'Ayurveda, in sala, online e nei ritiri.</p>
+<blockquote style="flex: 1 1 100%; margin: 24px 0 0; padding-top: 32px; border-top: 1px solid #B9C7BC; max-width: 960px; font-family: 'Marcellus', serif; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.3; text-wrap: balance">«Prendersi cura di sé, portando ascolto e presenza, è l'atto d'amore più grande che si possa fare.»<footer style="margin-top: 12px; font-family: 'Figtree', system-ui, sans-serif; font-size: 15px; color: #3E524E">— Mey</footer></blockquote>
 </div>
 </section>
 
@@ -175,6 +139,7 @@ footer nav a,#contatti dd a,#newsletter p a{display:inline-flex;align-items:cent
 <h3 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: 28px">Yin Yoga</h3>
 <p style="margin: 0; color: #C3CEC8">Pratica lenta, posture tenute a lungo che lavorano sui tessuti profondi e invitano all'ascolto.</p>
 <p style="margin: 6px 0 0; font-size: 14px; color: #E2A54A">[DURATA] · Adatta a tutti</p>
+<p style="margin: 0; font-size: 14px; color: #C3CEC8">[GIORNO E ORA] · [SEDE]</p>
 </div>
 </article>
 <article style="display: flex; flex-direction: column; gap: 18px; background: #21403C; border-radius: 20px; padding: 16px 16px 28px">
@@ -183,6 +148,7 @@ footer nav a,#contatti dd a,#newsletter p a{display:inline-flex;align-items:cent
 <h3 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: 28px">Bhakti Prema Vinyasa</h3>
 <p style="margin: 0; color: #C3CEC8">Il movimento fluido del Vinyasa unito alla devozione: un percorso di crescita, un respiro alla volta.</p>
 <p style="margin: 6px 0 0; font-size: 14px; color: #E2A54A">[DURATA] · [LIVELLO]</p>
+<p style="margin: 0; font-size: 14px; color: #C3CEC8">[GIORNO E ORA] · [SEDE]</p>
 </div>
 </article>
 <article style="display: flex; flex-direction: column; gap: 18px; background: #21403C; border-radius: 20px; padding: 16px 16px 28px">
@@ -191,106 +157,66 @@ footer nav a,#contatti dd a,#newsletter p a{display:inline-flex;align-items:cent
 <h3 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: 28px">Lezioni individuali e consulenze 1:1</h3>
 <p style="margin: 0; color: #C3CEC8">Un percorso costruito su di te, in sala o online, che unisce pratica, consigli ayurvedici e ascolto.</p>
 <p style="margin: 6px 0 0; font-size: 14px; color: #E2A54A">[DURATA] · In sala e online · [STRUMENTO ONLINE]</p>
+<p style="margin: 0; font-size: 14px; color: #C3CEC8">Su appuntamento</p>
 </div>
 </article>
 </div>
+<p style="margin: 0; color: #C3CEC8">Gli orari cambiano con le stagioni: <a href="#contatti" style="color: #EEF1EC; display: inline-flex; align-items: center; min-height: 44px">scrivimi per i posti liberi</a>.</p>
+<p style="margin: -16px 0 0; color: #C3CEC8">Organizzo anche ritiri ed eventi: le date escono su <a href="https://www.instagram.com/shaktimey_yogaeclimb/" style="color: #EEF1EC; display: inline-flex; align-items: center; min-height: 44px">Instagram</a>.</p>
 </div>
 </section>
 
-<!-- ARRAMPICATA -->
-<section id="arrampicata" style="background: #F7F8F4; border-bottom: 1px solid #CFD8D1">
-<div style="max-width: 1200px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
-<div style="flex: 1 1 340px; min-width: 0; height: clamp(340px, 50vw, 520px); border-radius: 20px; background: #D5DED6; display: flex; align-items: flex-end; padding: 24px; box-sizing: border-box">
-<span style="font-size: 13px; color: #4A5D59">[FOTO: Mey in parete, originale dal suo Instagram]</span>
+<!-- CLIMB -->
+<div id="climb" style="background: #F1EBE2; color: #2E2A24; border-top: 1px solid #DCD2C4">
+<section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 72px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+<h2 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(72px, 12vw, 160px); line-height: 0.9; letter-spacing: -0.02em">Climb</h2>
+<p style="margin: 0; max-width: 420px; font-size: 19px; color: #5E554A">L'arrampicata come pratica di ascolto: in parete, come sul tappetino.</p>
+</section>
+<section aria-labelledby="climb-storia" style="max-width: 1200px; margin: 0 auto; padding: 24px 24px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div style="flex: 1 1 340px; min-width: 0; height: clamp(340px, 50vw, 540px); border-radius: 20px; background: #CFC4B5; overflow: hidden">
+<img src="img/mey-parete.jpg" alt="Mey arrampica su un masso di roccia chiara, appesa con un braccio e una gamba tesa" loading="lazy" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 60% 35%">
 </div>
 <div style="flex: 1.2 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A5410">Yoga e arrampicata</p>
-<h2 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(36px, 4vw, 52px); line-height: 1.1; text-wrap: balance">Un limite diventato forza.</h2>
-<p style="margin: 0; color: #4A5D59">L'arrampicata me l'ha fatta scoprire la mia maestra, ed è arrivata come una sfida: poi, appiglio dopo appiglio, è diventata anche lei una maestra. Da questa passione, insieme ai miei soci, è nata Dolmen Climb, la palestra di arrampicata indoor di Trapani.</p>
-<p style="margin: 0; color: #4A5D59">[Cosa propone Mey a Dolmen Climb: per esempio yoga per climber, stretching, eventi]</p>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-top: 8px">
-<a href="https://www.dolmenclimb.com/" target="_blank" rel="noopener" style="text-decoration: none; display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #17302D; color: #EEF1EC; font-weight: 600">Scopri Dolmen Climb<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
-<span style="font-size: 15px; color: #4A5D59">Via dei Mulini 17, Trapani</span>
-</div>
-</div>
+<h3 id="climb-storia" style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(36px, 4vw, 52px); line-height: 1.1; text-wrap: balance">Un limite diventato forza.</h3>
+<p style="margin: 0; color: #5E554A">L'arrampicata me l'ha fatta scoprire la mia maestra, ed è arrivata come una sfida: poi, appiglio dopo appiglio, è diventata anche lei una maestra. Da questa passione, insieme ai miei soci, è nata Dolmen Climb, la palestra di arrampicata indoor di Trapani.</p>
 </div>
 </section>
-
-<!-- RITIRI -->
-<section id="ritiri" style="max-width: 1200px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 20px; max-width: 640px">
-<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A5410">Ritiri ed eventi</p>
-<h2 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(36px, 4vw, 52px); line-height: 1.1; text-wrap: balance">Qualche giorno lontano dal rumore.</h2>
-</div>
-<p style="margin: 0; max-width: 400px; color: #4A5D59">Pratica, rituali di riconnessione e consigli ayurvedici, immersi nella natura delle isole e del mare.</p>
-</div>
+<section aria-labelledby="climb-proposte" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 40px">
+<h3 id="climb-proposte" style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A5410">Cosa propongo</h3>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px">
-<article style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid #D9A04A; padding-top: 24px">
-<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #8A5410">Isole Eolie</p>
-<h3 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: 30px; line-height: 1.15">Filicudi</h3>
-<p style="margin: 0; font-size: 15px; font-weight: 600">[DATE]</p>
-<p style="margin: 0; color: #4A5D59">[Due righe sul ritiro: luogo, pratica, cosa lo rende speciale]</p>
-<a href="#contatti" aria-label="Chiedi informazioni sul ritiro Filicudi" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-underline-offset: 4px">Chiedi informazioni</a>
+<article style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid #B97A2C; padding-top: 24px">
+<h4 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: 28px; line-height: 1.15">[PROPOSTA 1]</h4>
+<p style="margin: 0; color: #5E554A">[Due righe: cos'è, per chi, quando. Per esempio yoga per climber, uscite su roccia, eventi]</p>
 </article>
-<article style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid #D9A04A; padding-top: 24px">
-<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #8A5410">2026</p>
-<h3 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: 30px; line-height: 1.15">Pantelleria</h3>
-<p style="margin: 0; font-size: 15px; font-weight: 600">[DATE]</p>
-<p style="margin: 0; color: #4A5D59">[Due righe sul ritiro: luogo, pratica, cosa lo rende speciale]</p>
-<a href="#contatti" aria-label="Chiedi informazioni sul ritiro Pantelleria" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-underline-offset: 4px">Chiedi informazioni</a>
+<article style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid #B97A2C; padding-top: 24px">
+<h4 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: 28px; line-height: 1.15">[PROPOSTA 2]</h4>
+<p style="margin: 0; color: #5E554A">[Due righe: cos'è, per chi, quando. Per esempio yoga per climber, uscite su roccia, eventi]</p>
 </article>
-<article style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid #D9A04A; padding-top: 24px">
-<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #8A5410">[LUOGO]</p>
-<h3 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: 30px; line-height: 1.15">Wild Yoga Retreat</h3>
-<p style="margin: 0; font-size: 15px; font-weight: 600">[DATE]</p>
-<p style="margin: 0; color: #4A5D59">[Due righe sul ritiro: luogo, pratica, cosa lo rende speciale]</p>
-<a href="#contatti" aria-label="Chiedi informazioni sul ritiro Wild Yoga Retreat" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-underline-offset: 4px">Chiedi informazioni</a>
+<article style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid #B97A2C; padding-top: 24px">
+<h4 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: 28px; line-height: 1.15">[PROPOSTA 3]</h4>
+<p style="margin: 0; color: #5E554A">[Due righe: cos'è, per chi, quando. Per esempio yoga per climber, uscite su roccia, eventi]</p>
 </article>
 </div>
 </section>
-
-<!-- ORARI -->
-<section id="orari" style="max-width: 1200px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 64px">
-<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A5410">Orari</p>
-<h2 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(36px, 4vw, 52px); line-height: 1.1">La settimana.</h2>
-<p style="margin: 0; color: #4A5D59">Le lezioni sono su prenotazione e i posti sono limitati. Gli orari possono cambiare con le stagioni.</p>
+<section aria-labelledby="dolmen" style="background: #2E2A24; color: #F1EBE2">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #E2A54A">La palestra</p>
+<h3 id="dolmen" style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(36px, 4vw, 48px); line-height: 1.1">Dolmen Climb</h3>
+<p style="margin: 0; max-width: 560px; color: #D6CCBF">La palestra di arrampicata indoor che ho fondato a Trapani insieme ai miei soci. Orari, prove e abbonamenti sono sul sito della palestra.</p>
 </div>
-<div style="flex: 2 1 560px; min-width: 0; overflow-x: auto">
-<table class="orari" style="width: 100%; min-width: 520px; border-collapse: collapse; font-size: 16px">
-<thead>
-<tr style="text-align: left; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5D59">
-<th scope="col" style="padding: 0 0 14px; font-weight: 600">Giorno</th>
-<th scope="col" style="padding: 0 0 14px; font-weight: 600">Orario</th>
-<th scope="col" style="padding: 0 0 14px; font-weight: 600">Lezione</th>
-<th scope="col" style="padding: 0 0 14px; font-weight: 600">Dove</th>
-</tr>
-</thead>
-<tbody>
-<tr style="border-top: 1px solid #CFD8D1"><td style="padding: 20px 0; font-weight: 600">[GIORNO]</td><td style="padding: 20px 0">[ORA]</td><td style="padding: 20px 0">Hatha Yoga</td><td style="padding: 20px 0; color: #4A5D59">[Kokoro / Paincenterlab]</td></tr>
-<tr style="border-top: 1px solid #CFD8D1"><td style="padding: 20px 0; font-weight: 600">[GIORNO]</td><td style="padding: 20px 0">[ORA]</td><td style="padding: 20px 0">Yin Yoga</td><td style="padding: 20px 0; color: #4A5D59">[Kokoro / Paincenterlab]</td></tr>
-<tr style="border-top: 1px solid #CFD8D1"><td style="padding: 20px 0; font-weight: 600">[GIORNO]</td><td style="padding: 20px 0">[ORA]</td><td style="padding: 20px 0">Bhakti Prema Vinyasa</td><td style="padding: 20px 0; color: #4A5D59">[Kokoro / Paincenterlab]</td></tr>
-<tr style="border-top: 1px solid #CFD8D1; border-bottom: 1px solid #CFD8D1"><td style="padding: 20px 0; font-weight: 600">Su richiesta</td><td style="padding: 20px 0">—</td><td style="padding: 20px 0">Lezione individuale</td><td style="padding: 20px 0; color: #4A5D59">[LUOGO]</td></tr>
-</tbody>
-</table>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px">
+<a href="https://www.dolmenclimb.com/" target="_blank" rel="noopener" style="text-decoration: none; display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #D9A04A; color: #2E2A24; font-weight: 600">Vai a Dolmen Climb<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<span style="font-size: 15px; color: #D6CCBF">Via dei Mulini 17, Trapani</span>
+</div>
 </div>
 </section>
-
-<!-- GALLERIA -->
-<section aria-label="Galleria fotografica" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 112px">
-<div class="gal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
-<div style="height: 340px; border-radius: 16px; background: #D5DED6; position: relative; overflow: hidden"><img src="img/mare-scogli.jpg" alt="Scogli chiari e acqua turchese lungo una costa mediterranea" loading="lazy" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 70% center"><span style="position: absolute; left: 12px; top: 12px; padding: 4px 10px; border-radius: 999px; background: rgba(23, 48, 45, 0.78); color: #EEF1EC; font-size: 12px">Foto provvisoria</span></div>
-<div style="height: 340px; border-radius: 16px; background: #CBD5CC; position: relative; overflow: hidden"><img src="img/mani-mala.jpg" alt="Mano aperta con bracciali mala in legno su sfondo scuro" loading="lazy" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 55% center"><span style="position: absolute; left: 12px; top: 12px; padding: 4px 10px; border-radius: 999px; background: rgba(23, 48, 45, 0.78); color: #EEF1EC; font-size: 12px">Foto provvisoria</span></div>
-<div style="height: 340px; border-radius: 16px; background: #D5DED6; position: relative; overflow: hidden"><img src="img/classe-gruppo.jpg" alt="Allievi in piegamento in avanti durante una lezione di gruppo" loading="lazy" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 65% center"><span style="position: absolute; left: 12px; top: 12px; padding: 4px 10px; border-radius: 999px; background: rgba(23, 48, 45, 0.78); color: #EEF1EC; font-size: 12px">Foto provvisoria</span></div>
-<div style="height: 340px; border-radius: 16px; background: #CBD5CC; position: relative; overflow: hidden"><img src="img/tisane-erbe.jpg" alt="Erbe e fiori per tisane su cucchiai disposti a cerchio" loading="lazy" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center center"><span style="position: absolute; left: 12px; top: 12px; padding: 4px 10px; border-radius: 999px; background: rgba(23, 48, 45, 0.78); color: #EEF1EC; font-size: 12px">Foto provvisoria</span></div>
 </div>
-</section>
 
 <!-- NEWSLETTER -->
 <section id="newsletter" style="background: #D9A04A; color: #17302D">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
-<div style="flex: 1.2 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
 <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase">La newsletter di Mey · su Substack</p>
 <h2 style="margin: 0; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(40px, 5vw, 64px); line-height: 1.05">Ritmi Ancestrali</h2>
 <p style="margin: 0; max-width: 520px; font-size: 19px">Pratiche da fare a casa, consigli ayurvedici e i ritmi delle stagioni, direttamente nella tua casella di posta. [Frequenza: es. una volta al mese]</p>
@@ -299,14 +225,8 @@ footer nav a,#contatti dd a,#newsletter p a{display:inline-flex;align-items:cent
 <input id="nl-email" type="email" autocomplete="email" placeholder="La tua email" style="flex: 1 1 260px; min-width: 0; min-height: 56px; padding: 0 22px; border: 1px solid #17302D; border-radius: 999px; font-size: 16px; background: #FFFDF8; color: #17302D">
 <button type="submit" style="flex: 0 0 auto; min-height: 56px; padding: 0 30px; border: 0; border-radius: 999px; background: #17302D; color: #EEF1EC; font-size: 16px; font-weight: 600; cursor: pointer">Iscriviti gratis</button>
 </form>
-<p style="margin: 0; font-size: 14px">Niente spam, ti cancelli quando vuoi. <a href="#privacy" style="color: #17302D">Privacy</a></p>
+<p style="margin: 0; font-size: 14px">Niente spam, ti cancelli quando vuoi. <a href="https://shaktimey.substack.com/" style="color: #17302D">Leggi i numeri su Substack</a> · <a href="#privacy" style="color: #17302D">Privacy</a></p>
 </div>
-<a href="https://shaktimey.substack.com/" style="flex: 1 1 340px; min-width: 0; text-decoration: none; color: #17302D; background: #FFFDF8; border-radius: 24px; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
-<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #8A5410">Ultimo numero · [DATA]</span>
-<span style="font-family: 'Marcellus', serif; font-size: 30px; line-height: 1.2">[Titolo dell'ultimo numero]</span>
-<span style="color: #4A5D59">[Due righe di anteprima: il tema del mese, la pratica proposta.]</span>
-<span style="font-weight: 600; text-decoration: underline; text-underline-offset: 4px">Leggi su Substack →</span>
-</a>
 </div>
 </section>
 
@@ -340,12 +260,17 @@ footer nav a,#contatti dd a,#newsletter p a{display:inline-flex;align-items:cent
 <div style="display: flex; flex-direction: column; gap: 8px">
 <label for="f-corso" style="font-size: 14px; font-weight: 600">Lezione di interesse</label>
 <select id="f-corso" style="min-height: 48px; padding: 0 12px; border: 1px solid #A9B7AF; border-radius: 10px; font-size: 16px; background: #FFFFFF; color: #17302D">
+<optgroup label="Yoga">
 <option>Yin Yoga</option>
 <option>Hatha Yoga</option>
 <option>Bhakti Prema Vinyasa</option>
 <option>Lezione individuale o consulenza 1:1</option>
 <option>Lezione online</option>
 <option>Ritiro</option>
+</optgroup>
+<optgroup label="Climb">
+<option>Arrampicata e yoga per climber</option>
+</optgroup>
 <option>Non lo so ancora</option>
 </select>
 </div>
